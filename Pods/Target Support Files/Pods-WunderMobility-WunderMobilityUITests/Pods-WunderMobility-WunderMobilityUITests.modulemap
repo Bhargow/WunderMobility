@@ -1,0 +1,6 @@
+framework module Pods_WunderMobility_WunderMobilityUITests {
+  umbrella header "Pods-WunderMobility-WunderMobilityUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

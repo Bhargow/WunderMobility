@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n8N-g7-0CX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Car List Viewcontroller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="WMCarListViewcontroller" id="BYZ-38-t0r" customClass="WMCarListViewcontroller" customModule="WunderMobility" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AK7-LS-1Vz">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="WMCarDetailsTableViewCell" rowHeight="150" id="R37-iE-mYC" customClass="WMCarDetailsTableViewCell" customModule="WunderMobility" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R37-iE-mYC" id="XcW-HO-8iA">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hf-3B-ZWQ">
+                                                    <rect key="frame" x="5" y="11" width="404" height="133"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="214-wQ-YT9">
+                                                    <rect key="frame" x="30" y="20" width="42" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="68k-d7-92p"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                    <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ffj-Cq-L3r">
+                                                    <rect key="frame" x="40" y="49" width="39" height="19.5"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="WMCarName"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="lbH-DB-Bhu">
+                                                    <rect key="frame" x="306" y="47.5" width="39" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Engine Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OFU-gj-HGr">
+                                                    <rect key="frame" x="299" y="22" width="85" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                    <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Rrg-FA-PLl">
+                                                    <rect key="frame" x="30" y="73.5" width="57" height="20.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                    <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RrB-8y-oyo">
+                                                    <rect key="frame" x="40" y="99" width="39" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="8hf-3B-ZWQ" firstAttribute="bottom" secondItem="XcW-HO-8iA" secondAttribute="bottomMargin" constant="5" id="1pV-DF-ywY"/>
+                                                <constraint firstItem="ffj-Cq-L3r" firstAttribute="leading" secondItem="214-wQ-YT9" secondAttribute="leading" constant="10" id="359-rf-R0j"/>
+                                                <constraint firstItem="ffj-Cq-L3r" firstAttribute="top" secondItem="214-wQ-YT9" secondAttribute="bottom" constant="5" id="5nO-ZH-VGN"/>
+                                                <constraint firstItem="RrB-8y-oyo" firstAttribute="leading" secondItem="Rrg-FA-PLl" secondAttribute="leading" constant="10" id="7Um-AT-6KV"/>
+                                                <constraint firstItem="lbH-DB-Bhu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OFU-gj-HGr" secondAttribute="leading" id="B1y-0d-j3H"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Rrg-FA-PLl" secondAttribute="trailing" id="FSE-Ve-vnm"/>
+                                                <constraint firstAttribute="trailing" secondItem="8hf-3B-ZWQ" secondAttribute="trailing" constant="5" id="G3G-xq-uP3"/>
+                                                <constraint firstItem="8hf-3B-ZWQ" firstAttribute="top" secondItem="XcW-HO-8iA" secondAttribute="topMargin" id="GHa-qF-AJi"/>
+                                                <constraint firstItem="214-wQ-YT9" firstAttribute="leading" secondItem="XcW-HO-8iA" secondAttribute="leading" constant="30" id="HPQ-h5-Ijj"/>
+                                                <constraint firstItem="OFU-gj-HGr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="214-wQ-YT9" secondAttribute="trailing" id="Lb2-li-Fce"/>
+                                                <constraint firstItem="OFU-gj-HGr" firstAttribute="centerY" secondItem="214-wQ-YT9" secondAttribute="centerY" id="Qpv-e8-5ql"/>
+                                                <constraint firstItem="lbH-DB-Bhu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ffj-Cq-L3r" secondAttribute="trailing" constant="10" id="XrM-Do-zUO"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="RrB-8y-oyo" secondAttribute="trailing" constant="30" id="Zjs-eT-5bx"/>
+                                                <constraint firstItem="Rrg-FA-PLl" firstAttribute="leading" secondItem="XcW-HO-8iA" secondAttribute="leading" constant="30" id="ccB-rD-vjj"/>
+                                                <constraint firstItem="lbH-DB-Bhu" firstAttribute="top" secondItem="OFU-gj-HGr" secondAttribute="bottom" constant="5" id="g8M-uU-8ib"/>
+                                                <constraint firstItem="8hf-3B-ZWQ" firstAttribute="leading" secondItem="XcW-HO-8iA" secondAttribute="leading" constant="5" id="gIj-Bq-KAD"/>
+                                                <constraint firstItem="Rrg-FA-PLl" firstAttribute="top" secondItem="ffj-Cq-L3r" secondAttribute="bottom" constant="5" id="hbJ-Hy-7aY"/>
+                                                <constraint firstItem="RrB-8y-oyo" firstAttribute="top" secondItem="Rrg-FA-PLl" secondAttribute="bottom" constant="5" id="oPm-Xy-eDB"/>
+                                                <constraint firstItem="214-wQ-YT9" firstAttribute="top" secondItem="XcW-HO-8iA" secondAttribute="top" constant="20" id="tIv-yK-2GC"/>
+                                                <constraint firstAttribute="trailing" secondItem="OFU-gj-HGr" secondAttribute="trailing" constant="30" id="uhW-Qq-bCB"/>
+                                                <constraint firstAttribute="trailing" secondItem="lbH-DB-Bhu" secondAttribute="trailing" constant="69" id="zDZ-uK-bPP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="WMCarDetailsTableViewCell"/>
+                                        <connections>
+                                            <outlet property="address" destination="RrB-8y-oyo" id="zqw-FS-2Ju"/>
+                                            <outlet property="engineType" destination="lbH-DB-Bhu" id="nEu-Bq-HuH"/>
+                                            <outlet property="name" destination="ffj-Cq-L3r" id="OpB-zE-QGp"/>
+                                            <outlet property="shadowView" destination="8hf-3B-ZWQ" id="fFq-Ov-iB2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="WFv-wt-U8t"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="opX-Nu-fPG"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AK7-LS-1Vz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BFV-bs-DIt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AK7-LS-1Vz" secondAttribute="trailing" id="EdK-Nb-k90"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AK7-LS-1Vz" secondAttribute="bottom" id="aIb-jJ-xjo"/>
+                            <constraint firstItem="AK7-LS-1Vz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gZh-Ss-vrT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icn_Car" id="d2k-FX-2zx"/>
+                    <connections>
+                        <outlet property="tblViewCarList" destination="AK7-LS-1Vz" id="qYf-uY-YM1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-713" y="-227"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0T4-s9-ZnI">
+            <objects>
+                <navigationController id="n8N-g7-0CX" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="VjO-jh-fsJ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="WiR-Ja-ZiH" kind="relationship" relationship="rootViewController" id="uVP-Xo-hSe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNn-0W-5X6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1903" y="-965"/>
+        </scene>
+        <!--Car list-->
+        <scene sceneID="waC-Xf-lb8">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="WiR-Ja-ZiH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Car list" id="YMi-Vf-1UE"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gg2-Nh-1kq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="mNS-kt-ZpM"/>
+                        <segue destination="SPi-Jn-LJn" kind="relationship" relationship="viewControllers" id="rKC-Bf-B3i"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QvV-Ml-h6M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="-968"/>
+        </scene>
+        <!--Detailed Map View Controller-->
+        <scene sceneID="PZp-Zk-TpC">
+            <objects>
+                <viewController storyboardIdentifier="WMDetailedMapViewController" id="SPi-Jn-LJn" customClass="WMDetailedMapViewController" customModule="WunderMobility" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HLs-hQ-yfM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bfS-SE-g5T">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <connections>
+                                    <outlet property="delegate" destination="SPi-Jn-LJn" id="dtx-vB-PGx"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cAo-1K-c04" firstAttribute="bottom" secondItem="bfS-SE-g5T" secondAttribute="bottom" id="6X8-gV-O9l"/>
+                            <constraint firstItem="bfS-SE-g5T" firstAttribute="leading" secondItem="cAo-1K-c04" secondAttribute="leading" id="LSa-QR-Vny"/>
+                            <constraint firstItem="cAo-1K-c04" firstAttribute="trailing" secondItem="bfS-SE-g5T" secondAttribute="trailing" id="hLe-3Y-ZPy"/>
+                            <constraint firstItem="bfS-SE-g5T" firstAttribute="top" secondItem="cAo-1K-c04" secondAttribute="top" id="uan-da-OWj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cAo-1K-c04"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icn_Map" id="mQT-e6-ld9"/>
+                    <connections>
+                        <outlet property="mapView" destination="bfS-SE-g5T" id="SbT-dh-oy2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ovr-uo-viD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="-227"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icn_Car" width="32" height="32"/>
+        <image name="icn_Map" width="25" height="25"/>
+    </resources>
+</document>

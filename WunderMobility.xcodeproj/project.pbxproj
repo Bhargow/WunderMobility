@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C72002168032CA578CCAA47 /* Pods_WunderMobility_WunderMobilityUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35D64A591795CC3DA6AC736 /* Pods_WunderMobility_WunderMobilityUITests.framework */; };
+		29058DF923CE068800682CE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29058DF823CE068800682CE6 /* AppDelegate.swift */; };
+		29058DFB23CE068800682CE6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29058DFA23CE068800682CE6 /* SceneDelegate.swift */; };
+		29058DFD23CE068800682CE6 /* WMCarListViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29058DFC23CE068800682CE6 /* WMCarListViewcontroller.swift */; };
+		29058E0023CE068800682CE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29058DFE23CE068800682CE6 /* Main.storyboard */; };
+		29058E0323CE068800682CE6 /* WunderMobility.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 29058E0123CE068800682CE6 /* WunderMobility.xcdatamodeld */; };
+		29058E0523CE068A00682CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29058E0423CE068A00682CE6 /* Assets.xcassets */; };
+		29058E0823CE068A00682CE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29058E0623CE068A00682CE6 /* LaunchScreen.storyboard */; };
+		29058E1323CE068A00682CE6 /* WunderMobilityAPIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29058E1223CE068A00682CE6 /* WunderMobilityAPIManagerTests.swift */; };
+		29058E1E23CE068A00682CE6 /* WunderMobilityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29058E1D23CE068A00682CE6 /* WunderMobilityUITests.swift */; };
+		29058E3023CE06D100682CE6 /* WMAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29058E2F23CE06D100682CE6 /* WMAPIManager.swift */; };
+		29058E3223CE0E2C00682CE6 /* WMInternetConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29058E3123CE0E2C00682CE6 /* WMInternetConnectionManager.swift */; };
+		29058E4C23CE39D700682CE6 /* WMCarCoordinatesModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29058E4823CE39D700682CE6 /* WMCarCoordinatesModel+CoreDataClass.swift */; };
+		29058E4F23CE39D700682CE6 /* WMCarDetailsModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29058E4B23CE39D700682CE6 /* WMCarDetailsModel+CoreDataClass.swift */; };
+		29058E5B23CF316000682CE6 /* WMCarListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29058E5A23CF316000682CE6 /* WMCarListProvider.swift */; };
+		29058E5D23CF35E600682CE6 /* WMDetailedMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29058E5C23CF35E600682CE6 /* WMDetailedMapViewController.swift */; };
+		29058E6023CF478600682CE6 /* WMCarDetailsModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29058E5E23CF478600682CE6 /* WMCarDetailsModel+CoreDataProperties.swift */; };
+		29058E6123CF478600682CE6 /* WMCarCoordinatesModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29058E5F23CF478600682CE6 /* WMCarCoordinatesModel+CoreDataProperties.swift */; };
+		29058E6323CF626000682CE6 /* WMCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29058E6223CF626000682CE6 /* WMCoreDataManager.swift */; };
+		29058E6823CF6BEC00682CE6 /* WMCarListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29058E6723CF6BEC00682CE6 /* WMCarListPresenter.swift */; };
+		2974D06923CFF264005C00E0 /* WMAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2974D06823CFF264005C00E0 /* WMAnnotation.swift */; };
+		2974D06B23D0138A005C00E0 /* WunderMobilityCarListProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2974D06A23D0138A005C00E0 /* WunderMobilityCarListProviderTests.swift */; };
+		2974D06D23D01402005C00E0 /* WunderMobilityCoreDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2974D06C23D01402005C00E0 /* WunderMobilityCoreDataManagerTests.swift */; };
+		2974D07123D027B7005C00E0 /* WunderMobilityCarListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2974D07023D027B7005C00E0 /* WunderMobilityCarListPresenterTests.swift */; };
+		2974D07823D0D528005C00E0 /* TempCarDataForTesting.json in Resources */ = {isa = PBXBuildFile; fileRef = 2974D07723D0D528005C00E0 /* TempCarDataForTesting.json */; };
+		298AF6E023CF82C900090E48 /* WMCarDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298AF6DF23CF82C900090E48 /* WMCarDetailsTableViewCell.swift */; };
+		298AF6E223CF86FA00090E48 /* WMConstants&Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298AF6E123CF86FA00090E48 /* WMConstants&Extenstions.swift */; };
+		3F7913C24413351E5CF848E6 /* Pods_WunderMobilityTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBFDC580ACC0FB3EFEF71BC0 /* Pods_WunderMobilityTests.framework */; };
+		A615A656ED5471F57622CCB0 /* Pods_WunderMobility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D666DFE30EF9F41F827E1F23 /* Pods_WunderMobility.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29058E0F23CE068A00682CE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29058DED23CE068800682CE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29058DF423CE068800682CE6;
+			remoteInfo = WunderMobility;
+		};
+		29058E1A23CE068A00682CE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29058DED23CE068800682CE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29058DF423CE068800682CE6;
+			remoteInfo = WunderMobility;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16837695A086C2F4E186B42F /* Pods-WunderMobility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderMobility.release.xcconfig"; path = "Target Support Files/Pods-WunderMobility/Pods-WunderMobility.release.xcconfig"; sourceTree = "<group>"; };
+		29058DF523CE068800682CE6 /* WunderMobility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WunderMobility.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29058DF823CE068800682CE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		29058DFA23CE068800682CE6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		29058DFC23CE068800682CE6 /* WMCarListViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMCarListViewcontroller.swift; sourceTree = "<group>"; };
+		29058DFF23CE068800682CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29058E0223CE068800682CE6 /* WunderMobility.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WunderMobility.xcdatamodel; sourceTree = "<group>"; };
+		29058E0423CE068A00682CE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29058E0723CE068A00682CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29058E0923CE068A00682CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29058E0E23CE068A00682CE6 /* WunderMobilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WunderMobilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29058E1223CE068A00682CE6 /* WunderMobilityAPIManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WunderMobilityAPIManagerTests.swift; sourceTree = "<group>"; };
+		29058E1423CE068A00682CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29058E1923CE068A00682CE6 /* WunderMobilityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WunderMobilityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		29058E1D23CE068A00682CE6 /* WunderMobilityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WunderMobilityUITests.swift; sourceTree = "<group>"; };
+		29058E1F23CE068A00682CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29058E2F23CE06D100682CE6 /* WMAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMAPIManager.swift; sourceTree = "<group>"; };
+		29058E3123CE0E2C00682CE6 /* WMInternetConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMInternetConnectionManager.swift; sourceTree = "<group>"; };
+		29058E4823CE39D700682CE6 /* WMCarCoordinatesModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WMCarCoordinatesModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		29058E4B23CE39D700682CE6 /* WMCarDetailsModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WMCarDetailsModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		29058E5A23CF316000682CE6 /* WMCarListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMCarListProvider.swift; sourceTree = "<group>"; };
+		29058E5C23CF35E600682CE6 /* WMDetailedMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMDetailedMapViewController.swift; sourceTree = "<group>"; };
+		29058E5E23CF478600682CE6 /* WMCarDetailsModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WMCarDetailsModel+CoreDataProperties.swift"; path = "/Users/rao/Desktop/Interview/WunderMobility/Model/WMCarDetailsModel+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		29058E5F23CF478600682CE6 /* WMCarCoordinatesModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "WMCarCoordinatesModel+CoreDataProperties.swift"; path = "/Users/rao/Desktop/Interview/WunderMobility/Model/WMCarCoordinatesModel+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		29058E6223CF626000682CE6 /* WMCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMCoreDataManager.swift; sourceTree = "<group>"; };
+		29058E6723CF6BEC00682CE6 /* WMCarListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMCarListPresenter.swift; sourceTree = "<group>"; };
+		2974D06823CFF264005C00E0 /* WMAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMAnnotation.swift; sourceTree = "<group>"; };
+		2974D06A23D0138A005C00E0 /* WunderMobilityCarListProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WunderMobilityCarListProviderTests.swift; sourceTree = "<group>"; };
+		2974D06C23D01402005C00E0 /* WunderMobilityCoreDataManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WunderMobilityCoreDataManagerTests.swift; sourceTree = "<group>"; };
+		2974D07023D027B7005C00E0 /* WunderMobilityCarListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WunderMobilityCarListPresenterTests.swift; sourceTree = "<group>"; };
+		2974D07723D0D528005C00E0 /* TempCarDataForTesting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = TempCarDataForTesting.json; sourceTree = "<group>"; };
+		298AF6DF23CF82C900090E48 /* WMCarDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WMCarDetailsTableViewCell.swift; sourceTree = "<group>"; };
+		298AF6E123CF86FA00090E48 /* WMConstants&Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WMConstants&Extenstions.swift"; sourceTree = "<group>"; };
+		2D5370B3094F3785D3AB4CB6 /* Pods-WunderMobility-WunderMobilityUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderMobility-WunderMobilityUITests.debug.xcconfig"; path = "Target Support Files/Pods-WunderMobility-WunderMobilityUITests/Pods-WunderMobility-WunderMobilityUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7092D5E620D6B8DEA0D679C5 /* Pods-WunderMobilityTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderMobilityTests.release.xcconfig"; path = "Target Support Files/Pods-WunderMobilityTests/Pods-WunderMobilityTests.release.xcconfig"; sourceTree = "<group>"; };
+		8AF95581F48C9343DDB53A17 /* Pods-WunderMobility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderMobility.debug.xcconfig"; path = "Target Support Files/Pods-WunderMobility/Pods-WunderMobility.debug.xcconfig"; sourceTree = "<group>"; };
+		AE21A1541C705A7CDCE607D8 /* Pods-WunderMobilityTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderMobilityTests.debug.xcconfig"; path = "Target Support Files/Pods-WunderMobilityTests/Pods-WunderMobilityTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D35D64A591795CC3DA6AC736 /* Pods_WunderMobility_WunderMobilityUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WunderMobility_WunderMobilityUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D666DFE30EF9F41F827E1F23 /* Pods_WunderMobility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WunderMobility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D9082E5B454D3F039A4466 /* Pods-WunderMobility-WunderMobilityUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WunderMobility-WunderMobilityUITests.release.xcconfig"; path = "Target Support Files/Pods-WunderMobility-WunderMobilityUITests/Pods-WunderMobility-WunderMobilityUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FBFDC580ACC0FB3EFEF71BC0 /* Pods_WunderMobilityTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WunderMobilityTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29058DF223CE068800682CE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A615A656ED5471F57622CCB0 /* Pods_WunderMobility.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29058E0B23CE068A00682CE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7913C24413351E5CF848E6 /* Pods_WunderMobilityTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29058E1623CE068A00682CE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C72002168032CA578CCAA47 /* Pods_WunderMobility_WunderMobilityUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29058DEC23CE068800682CE6 = {
+			isa = PBXGroup;
+			children = (
+				29058DF723CE068800682CE6 /* WunderMobility */,
+				29058E1123CE068A00682CE6 /* WunderMobilityTests */,
+				29058E1C23CE068A00682CE6 /* WunderMobilityUITests */,
+				29058DF623CE068800682CE6 /* Products */,
+				8D6E6468A5116834A5ADE649 /* Pods */,
+				CCCFB39A4C1E3B411990F362 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		29058DF623CE068800682CE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29058DF523CE068800682CE6 /* WunderMobility.app */,
+				29058E0E23CE068A00682CE6 /* WunderMobilityTests.xctest */,
+				29058E1923CE068A00682CE6 /* WunderMobilityUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29058DF723CE068800682CE6 /* WunderMobility */ = {
+			isa = PBXGroup;
+			children = (
+				29058DF823CE068800682CE6 /* AppDelegate.swift */,
+				29058DFA23CE068800682CE6 /* SceneDelegate.swift */,
+				29058E6623CF6B7300682CE6 /* View */,
+				29058E6523CF6B6700682CE6 /* Presenter */,
+				29058E3723CE2D0700682CE6 /* Model */,
+				29058E2C23CE069D00682CE6 /* Providers */,
+				29058DFE23CE068800682CE6 /* Main.storyboard */,
+				29058E0423CE068A00682CE6 /* Assets.xcassets */,
+				29058E0623CE068A00682CE6 /* LaunchScreen.storyboard */,
+				29058E0923CE068A00682CE6 /* Info.plist */,
+				29058E0123CE068800682CE6 /* WunderMobility.xcdatamodeld */,
+			);
+			path = WunderMobility;
+			sourceTree = "<group>";
+		};
+		29058E1123CE068A00682CE6 /* WunderMobilityTests */ = {
+			isa = PBXGroup;
+			children = (
+				29058E1223CE068A00682CE6 /* WunderMobilityAPIManagerTests.swift */,
+				2974D06A23D0138A005C00E0 /* WunderMobilityCarListProviderTests.swift */,
+				2974D06C23D01402005C00E0 /* WunderMobilityCoreDataManagerTests.swift */,
+				2974D07023D027B7005C00E0 /* WunderMobilityCarListPresenterTests.swift */,
+				2974D07723D0D528005C00E0 /* TempCarDataForTesting.json */,
+				29058E1423CE068A00682CE6 /* Info.plist */,
+			);
+			path = WunderMobilityTests;
+			sourceTree = "<group>";
+		};
+		29058E1C23CE068A00682CE6 /* WunderMobilityUITests */ = {
+			isa = PBXGroup;
+			children = (
+				29058E1D23CE068A00682CE6 /* WunderMobilityUITests.swift */,
+				29058E1F23CE068A00682CE6 /* Info.plist */,
+			);
+			path = WunderMobilityUITests;
+			sourceTree = "<group>";
+		};
+		29058E2C23CE069D00682CE6 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				29058E2F23CE06D100682CE6 /* WMAPIManager.swift */,
+				29058E5A23CF316000682CE6 /* WMCarListProvider.swift */,
+				29058E6223CF626000682CE6 /* WMCoreDataManager.swift */,
+				29058E3123CE0E2C00682CE6 /* WMInternetConnectionManager.swift */,
+				298AF6E123CF86FA00090E48 /* WMConstants&Extenstions.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		29058E3723CE2D0700682CE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				29058E5E23CF478600682CE6 /* WMCarDetailsModel+CoreDataProperties.swift */,
+				29058E4B23CE39D700682CE6 /* WMCarDetailsModel+CoreDataClass.swift */,
+				29058E5F23CF478600682CE6 /* WMCarCoordinatesModel+CoreDataProperties.swift */,
+				29058E4823CE39D700682CE6 /* WMCarCoordinatesModel+CoreDataClass.swift */,
+			);
+			path = Model;
+			sourceTree = SOURCE_ROOT;
+		};
+		29058E6523CF6B6700682CE6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				29058E6723CF6BEC00682CE6 /* WMCarListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		29058E6623CF6B7300682CE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29058DFC23CE068800682CE6 /* WMCarListViewcontroller.swift */,
+				29058E5C23CF35E600682CE6 /* WMDetailedMapViewController.swift */,
+				298AF6DF23CF82C900090E48 /* WMCarDetailsTableViewCell.swift */,
+				2974D06823CFF264005C00E0 /* WMAnnotation.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D6E6468A5116834A5ADE649 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AF95581F48C9343DDB53A17 /* Pods-WunderMobility.debug.xcconfig */,
+				16837695A086C2F4E186B42F /* Pods-WunderMobility.release.xcconfig */,
+				2D5370B3094F3785D3AB4CB6 /* Pods-WunderMobility-WunderMobilityUITests.debug.xcconfig */,
+				E9D9082E5B454D3F039A4466 /* Pods-WunderMobility-WunderMobilityUITests.release.xcconfig */,
+				AE21A1541C705A7CDCE607D8 /* Pods-WunderMobilityTests.debug.xcconfig */,
+				7092D5E620D6B8DEA0D679C5 /* Pods-WunderMobilityTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CCCFB39A4C1E3B411990F362 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D666DFE30EF9F41F827E1F23 /* Pods_WunderMobility.framework */,
+				D35D64A591795CC3DA6AC736 /* Pods_WunderMobility_WunderMobilityUITests.framework */,
+				FBFDC580ACC0FB3EFEF71BC0 /* Pods_WunderMobilityTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29058DF423CE068800682CE6 /* WunderMobility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29058E2223CE068A00682CE6 /* Build configuration list for PBXNativeTarget "WunderMobility" */;
+			buildPhases = (
+				8EE83B8E3B9889C9FDA9EEEF /* [CP] Check Pods Manifest.lock */,
+				29058DF123CE068800682CE6 /* Sources */,
+				29058DF223CE068800682CE6 /* Frameworks */,
+				29058DF323CE068800682CE6 /* Resources */,
+				DA64BD6D30427849CCA03003 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WunderMobility;
+			productName = WunderMobility;
+			productReference = 29058DF523CE068800682CE6 /* WunderMobility.app */;
+			productType = "com.apple.product-type.application";
+		};
+		29058E0D23CE068A00682CE6 /* WunderMobilityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29058E2523CE068A00682CE6 /* Build configuration list for PBXNativeTarget "WunderMobilityTests" */;
+			buildPhases = (
+				CA19971538F0A403518EB642 /* [CP] Check Pods Manifest.lock */,
+				29058E0A23CE068A00682CE6 /* Sources */,
+				29058E0B23CE068A00682CE6 /* Frameworks */,
+				29058E0C23CE068A00682CE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29058E1023CE068A00682CE6 /* PBXTargetDependency */,
+			);
+			name = WunderMobilityTests;
+			productName = WunderMobilityTests;
+			productReference = 29058E0E23CE068A00682CE6 /* WunderMobilityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		29058E1823CE068A00682CE6 /* WunderMobilityUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29058E2823CE068A00682CE6 /* Build configuration list for PBXNativeTarget "WunderMobilityUITests" */;
+			buildPhases = (
+				D1D9339FDEE01B8EB04A8FD8 /* [CP] Check Pods Manifest.lock */,
+				29058E1523CE068A00682CE6 /* Sources */,
+				29058E1623CE068A00682CE6 /* Frameworks */,
+				29058E1723CE068A00682CE6 /* Resources */,
+				5B5E6AD3A15F2ACDB9A0FA59 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29058E1B23CE068A00682CE6 /* PBXTargetDependency */,
+			);
+			name = WunderMobilityUITests;
+			productName = WunderMobilityUITests;
+			productReference = 29058E1923CE068A00682CE6 /* WunderMobilityUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29058DED23CE068800682CE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Bhargow;
+				TargetAttributes = {
+					29058DF423CE068800682CE6 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					29058E0D23CE068A00682CE6 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 29058DF423CE068800682CE6;
+					};
+					29058E1823CE068A00682CE6 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 29058DF423CE068800682CE6;
+					};
+				};
+			};
+			buildConfigurationList = 29058DF023CE068800682CE6 /* Build configuration list for PBXProject "WunderMobility" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29058DEC23CE068800682CE6;
+			productRefGroup = 29058DF623CE068800682CE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29058DF423CE068800682CE6 /* WunderMobility */,
+				29058E0D23CE068A00682CE6 /* WunderMobilityTests */,
+				29058E1823CE068A00682CE6 /* WunderMobilityUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29058DF323CE068800682CE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29058E0823CE068A00682CE6 /* LaunchScreen.storyboard in Resources */,
+				29058E0523CE068A00682CE6 /* Assets.xcassets in Resources */,
+				29058E0023CE068800682CE6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29058E0C23CE068A00682CE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2974D07823D0D528005C00E0 /* TempCarDataForTesting.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29058E1723CE068A00682CE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B5E6AD3A15F2ACDB9A0FA59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WunderMobility-WunderMobilityUITests/Pods-WunderMobility-WunderMobilityUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WunderMobility-WunderMobilityUITests/Pods-WunderMobility-WunderMobilityUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WunderMobility-WunderMobilityUITests/Pods-WunderMobility-WunderMobilityUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EE83B8E3B9889C9FDA9EEEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WunderMobility-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA19971538F0A403518EB642 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WunderMobilityTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1D9339FDEE01B8EB04A8FD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WunderMobility-WunderMobilityUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA64BD6D30427849CCA03003 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WunderMobility/Pods-WunderMobility-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WunderMobility/Pods-WunderMobility-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WunderMobility/Pods-WunderMobility-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29058DF123CE068800682CE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29058E3223CE0E2C00682CE6 /* WMInternetConnectionManager.swift in Sources */,
+				29058E5D23CF35E600682CE6 /* WMDetailedMapViewController.swift in Sources */,
+				29058E3023CE06D100682CE6 /* WMAPIManager.swift in Sources */,
+				29058DFD23CE068800682CE6 /* WMCarListViewcontroller.swift in Sources */,
+				29058E0323CE068800682CE6 /* WunderMobility.xcdatamodeld in Sources */,
+				298AF6E223CF86FA00090E48 /* WMConstants&Extenstions.swift in Sources */,
+				29058E4F23CE39D700682CE6 /* WMCarDetailsModel+CoreDataClass.swift in Sources */,
+				2974D06923CFF264005C00E0 /* WMAnnotation.swift in Sources */,
+				29058E6123CF478600682CE6 /* WMCarCoordinatesModel+CoreDataProperties.swift in Sources */,
+				29058DF923CE068800682CE6 /* AppDelegate.swift in Sources */,
+				298AF6E023CF82C900090E48 /* WMCarDetailsTableViewCell.swift in Sources */,
+				29058DFB23CE068800682CE6 /* SceneDelegate.swift in Sources */,
+				29058E6323CF626000682CE6 /* WMCoreDataManager.swift in Sources */,
+				29058E6023CF478600682CE6 /* WMCarDetailsModel+CoreDataProperties.swift in Sources */,
+				29058E5B23CF316000682CE6 /* WMCarListProvider.swift in Sources */,
+				29058E4C23CE39D700682CE6 /* WMCarCoordinatesModel+CoreDataClass.swift in Sources */,
+				29058E6823CF6BEC00682CE6 /* WMCarListPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29058E0A23CE068A00682CE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2974D06D23D01402005C00E0 /* WunderMobilityCoreDataManagerTests.swift in Sources */,
+				29058E1323CE068A00682CE6 /* WunderMobilityAPIManagerTests.swift in Sources */,
+				2974D06B23D0138A005C00E0 /* WunderMobilityCarListProviderTests.swift in Sources */,
+				2974D07123D027B7005C00E0 /* WunderMobilityCarListPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29058E1523CE068A00682CE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29058E1E23CE068A00682CE6 /* WunderMobilityUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29058E1023CE068A00682CE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29058DF423CE068800682CE6 /* WunderMobility */;
+			targetProxy = 29058E0F23CE068A00682CE6 /* PBXContainerItemProxy */;
+		};
+		29058E1B23CE068A00682CE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29058DF423CE068800682CE6 /* WunderMobility */;
+			targetProxy = 29058E1A23CE068A00682CE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		29058DFE23CE068800682CE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29058DFF23CE068800682CE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		29058E0623CE068A00682CE6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29058E0723CE068A00682CE6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29058E2023CE068A00682CE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29058E2123CE068A00682CE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29058E2323CE068A00682CE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AF95581F48C9343DDB53A17 /* Pods-WunderMobility.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AH5D29ZH45;
+				INFOPLIST_FILE = WunderMobility/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WunderMobility;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29058E2423CE068A00682CE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16837695A086C2F4E186B42F /* Pods-WunderMobility.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AH5D29ZH45;
+				INFOPLIST_FILE = WunderMobility/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WunderMobility;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		29058E2623CE068A00682CE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE21A1541C705A7CDCE607D8 /* Pods-WunderMobilityTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AH5D29ZH45;
+				INFOPLIST_FILE = WunderMobilityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WunderMobilityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WunderMobility.app/WunderMobility";
+			};
+			name = Debug;
+		};
+		29058E2723CE068A00682CE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7092D5E620D6B8DEA0D679C5 /* Pods-WunderMobilityTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AH5D29ZH45;
+				INFOPLIST_FILE = WunderMobilityTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WunderMobilityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WunderMobility.app/WunderMobility";
+			};
+			name = Release;
+		};
+		29058E2923CE068A00682CE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D5370B3094F3785D3AB4CB6 /* Pods-WunderMobility-WunderMobilityUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AH5D29ZH45;
+				INFOPLIST_FILE = WunderMobilityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WunderMobilityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WunderMobility;
+			};
+			name = Debug;
+		};
+		29058E2A23CE068A00682CE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9D9082E5B454D3F039A4466 /* Pods-WunderMobility-WunderMobilityUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AH5D29ZH45;
+				INFOPLIST_FILE = WunderMobilityUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WunderMobilityUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WunderMobility;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29058DF023CE068800682CE6 /* Build configuration list for PBXProject "WunderMobility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29058E2023CE068A00682CE6 /* Debug */,
+				29058E2123CE068A00682CE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29058E2223CE068A00682CE6 /* Build configuration list for PBXNativeTarget "WunderMobility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29058E2323CE068A00682CE6 /* Debug */,
+				29058E2423CE068A00682CE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29058E2523CE068A00682CE6 /* Build configuration list for PBXNativeTarget "WunderMobilityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29058E2623CE068A00682CE6 /* Debug */,
+				29058E2723CE068A00682CE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29058E2823CE068A00682CE6 /* Build configuration list for PBXNativeTarget "WunderMobilityUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29058E2923CE068A00682CE6 /* Debug */,
+				29058E2A23CE068A00682CE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		29058E0123CE068800682CE6 /* WunderMobility.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				29058E0223CE068800682CE6 /* WunderMobility.xcdatamodel */,
+			);
+			currentVersion = 29058E0223CE068800682CE6 /* WunderMobility.xcdatamodel */;
+			path = WunderMobility.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 29058DED23CE068800682CE6 /* Project object */;
+}
